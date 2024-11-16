@@ -13,8 +13,8 @@
     "pnpm": ">=9.6.0"
   },
   "scripts": {
-    "dev": "pnpm --filter www dev",
-    "build": "pnpm --filter www build",
+    "dev": "node api.js && pnpm --filter www dev",
+    "build": "node api.js && pnpm --filter www build",
     "preview": "pnpm --filter www preview",
     "prepare": "pnpm simple-git-hooks",
     "lint": "eslint .",
